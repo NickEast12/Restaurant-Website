@@ -4,135 +4,84 @@
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased!important;
 	
-	
 }
 a {
 	text-decoration: none;
 	color: inherit;
 }
 h1,h2,h3,h4,h5,h6 {
-	font-family: 'Cormorant Garamond', serif;
+	font-family: 'Playfair Display', serif;
 }
 p {
 	font-family: 'Montserrat', sans-serif;	
 }
 
 @media (min-width:320px) {
-	/*Styling the website for mobile devices form 320px and up*/
-	/*Adding a background to the header*/
-	header {
-		background-image: url(Pictures/background1.jpg); 
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
+	/* Styling the page for mobile phones from 320px and larger */
+	/* Styling the header */
+	.headerWrapper {
+		background-image: url(Pictures/background.jpg);
 		background-position: center;
-		width: 100%;
-		height: 36em;
+		background-size: cover;
+
 	}
-	/*Creating the grid in the top part of the header*/
-	.mainHeaderWrapper {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas: 
-			"a c"
-			"b b" ;
+	/* Styling the navigation bar */
+	.navigationBarWrapper {
 		background: white;
-	}
-	/*Styling the Logo wrapper and Logo*/
-	.logoWrapper {
-		grid-area: a;
-	}
-	.logoWrapper h2 {
-		font-family: 'Coming Soon', cursive;
-		color: black;
-		letter-spacing: 2px;
-		font-size: 1.4em;
-		padding: 10px
-
-		
-		
-	}
-	/*Styling the navigation links using the grid*/
-	.mainNavigationWrapper {
-			grid-area: b;
-			display: grid;
-			grid-template-columns: 1fr;
-			text-align: center
-	}
-	nav ul li {
-		padding: .7em;
-		font-family: 'Coming Soon', cursive;
-		background: #eee;
-		border: none; 
-		
-		border-bottom: solid 1px black 
-		
-
-	}
-	/*Styling the socia links using the grid*/
-	.mainSocialLinksWrapper {
-		grid-area: c;
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-		width: 55%;
-		margin: auto;
-		
-	}
-	.mainSocialLinksWrapper i {
-		font-size: .65em;
-		width: 100%; 
-		text-align: center;
-		padding: 1em;
-		
-	}
-	/*Styling the title wrapper*/
-	.titleWrapper {
-		;
-	}
-	/*Styling the lemon img + h3*/
-	.lemonTitle {
-		width: 50%;
-		margin: auto;
-		text-align: center;
-		position: relative;
-		padding: 1.5em;
-		
-		
-	}
-	.lemonTitle h3 {
-		font-family: 'Sacramento', cursive;
-		font-size: 2em;
-		color: yellow;
-
-	}
-	.lemonTitle img {
-		position: absolute;
-		top:  .5em;
-		left: 5.35em;
-		width: 16%;
-	}
-	
-	.titleWrapper {
 		width: 100%;
+		
+	}
+	/* Styling the logo wrapper */
+	.logoWrapper {
+		margin: 1em;
+		font-size: .8em;
+	}
+	/* Styling the navigation */
+	.mainNavWapper {
+		
 		text-align: center;
 	}
-	.titleWrapper  h4 {
-		width: 50%; 
+	.mainNavWapper nav ul {
+		list-style: none; 
+		
+	}
+	.mainNavWapper nav ul li {
+		padding: .7em;
+		border-bottom: solid .1px #d6bd8f;
+		width: 40%;
 		margin: auto;
-		font-family: 'Montserrat', sans-serif;	
-		text-transform: uppercase;
-		letter-spacing: 2px;
-		font-size: .6em;
-		font-weight: 100;
+		
+	}
+	/* Styling the navigation */
+	.buttonWrapper {
+		text-align: center;
+		
+	}
+	.buttonWrapper button {
+		border-radius: 2px;
+		padding: 10px 40px 10px 40px; 
+		margin-top: 1.5em;
+		background: none;
+		border: solid 2px  #d6bd8f ;
+		color:  #d6bd8f;
+		font-weight: 700;
+		margin-bottom: 2em;
+		transition-property: background, color, transform ;
+		transition-duration: .5s;
+		transition-timing-function: ease;
+	}
+	.buttonWrapper button:hover {
+		transform: translateY(-4px);
+		background:  #d6bd8f;
+		color: white;
 
 	}
-	.titleWrapper h1 {
-		font-size: 3em;
-		font-weight: 700;
+	/* Styling the title wrapper */
+	.titleWrapper {
 		color: white;
-		font-style: italic; 
-	}
-	
+		background: black;
+
+		}
 	
 	
 	
