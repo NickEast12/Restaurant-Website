@@ -80,8 +80,130 @@ p {
 	.titleWrapper {
 		color: white;
 		background: black;
+		width: 100%;
+		padding: 5em 0;
+		
+		
 
 		}
+	.titleWrapper h1 {
+		font-size: 1.6em; 
+		width: 80%; 
+		margin: auto;
+		padding-top: 2em;
+	
+	}
+	.titleWrapper span {
+		color:  #d6bd8f;
+		font-style: italic;
+	}
+	.titleWrapper p {
+		font-size: .8em;
+		width: 80%;
+		margin: auto;
+		margin-top: 1em;
+	}
+	.titleWrapper button {
+		border-radius: 2px;
+		padding: 10px 40px 10px 40px; 
+		margin: 4em 31%;
+		background: none;
+		border: solid 2px  #d6bd8f ;
+		color:  #d6bd8f;
+		font-weight: 700;
+		margin-bottom: 2em;
+		transition-property: background, color, transform ;
+		transition-duration: .5s;
+		transition-timing-function: ease; 
+		
+	}
+	.titleWrapper button:hover {
+		transform: translateY(-4px);
+		background:  #d6bd8f;
+		color: white;
+
+	}
+	/* Styling the introduction wrapper */
+	.introWrapper {
+		display: grid;
+		grid-template-columns: 1fr; 
+		width: 80%;
+		margin: auto;
+		margin-bottom: 4em;
+		
+	}
+	/* Styling the introduction wrapper DIVS */
+	.introWrapperText {
+		margin-top: 2em;
+		
+	}
+	.introWrapperText  h2 {
+		font-size: 1.6em;
+		font-weight: 300;
+	}
+	.introWrapperText hr {
+		width: 5em;
+		margin: 1em 0;
+		height: 2px;
+		color: #d6bd8f;
+		background: #d6bd8f;
+		border: none;
+	}
+	.introWrapperText p {
+		font-size: .9em;
+		margin-bottom: 2em;
+	}
+	.introWrapperIMG img {
+		width: 100%;
+	}
+	/* Styling the chef section */
+	.chefWrapperBackground {
+		background-image: url(Pictures/lowerbackground.jpg);
+		background-size: cover;
+	}
+	.chefWrapper {
+		width: 80%;
+		margin: auto;
+		color: white;
+		text-align: center;
+		padding-bottom: 2em;
+		
+	}
+	.chefWrapper  h3 {
+		font-size: 1.45em;
+		padding-top: 4em; 
+	}
+	.chefWrapper hr {
+		width: 5em;
+		margin: auto;
+		height: 2px;
+		color: #d6bd8f;
+		background: #d6bd8f; 
+		border: none;
+		margin-top: 1em;
+		margin-bottom: 1em
+	}
+	.chefWrapper p {
+		font-size: .9em; 
+		margin-bottom: 2em;
+		font-weight: 500;
+	}
+	/* Styling the chef cards */
+	.chefCard {
+		
+	}
+	.chefCard i {
+		font-size: 2em;
+		color: #d6bd8f;
+
+	}
+	.chefCard h4 {
+		margin-top: 1em;
+		font-size: 1.4em;
+	}
+	.chefCard p {
+		margin-top: 1em;
+	}
 	
 	
 	
