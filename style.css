@@ -226,6 +226,7 @@ p {
 	/* Styling the first menu card*/
 	.MenuCard1Background {
 		background:  #eee;
+		padding-bottom: 1em;
 	}
 	.MenuCard1 {
 		width: 90%;
@@ -247,6 +248,7 @@ p {
 		width: 90%;
 		margin-bottom: 2em;
 		font-weight: 400;
+		text-align: left;
 	}
 	/* Getting the price and name of food on the same line */
 	.itemPrice {
@@ -266,7 +268,23 @@ p {
 		font-weight: 400;
 
 	}
+	/* Styling the IMG menu card*/
+	.IMGcard {
+		margin: 0;
+		padding: 0;
+		
+		
+	}
+	.IMGcard img {
+		width: 100%;
+		height: 100%;
+	}
 	
+	/* Formatting the cards into a grid layout*/
+	.MenuCards {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
 
 
 
