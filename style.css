@@ -490,6 +490,158 @@ box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.75);
 
 
 }
+@media (min-width:700px) {
+	/* Styling the page for tablets from screen size 700px and up */
+	
+	/* Resizing the navigation */ 
+	.navigationBarWrapper {
+		display: grid;
+		grid-template-columns: 20% 55% 1fr;
+		background: black;
+	}
+	.mainNavWapper nav ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr 20% 1fr 25% 20%;
+		margin-top: 1.7em;
+		
+	}
+	.mainNavWapper nav ul li {
+		border: none; 
+		font-size: 1em;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		color: white;
+		
+			
+	}
+	.logoWrapper h1 {
+		color: white;
+	}
+	/* Resizing the title screen */ 
+	.headerWrapper {
+		height: 54.5em;
+		background-attachment: fixed;
+	}
+	.titleWrapper {
+		background: none;
+		margin-top: 4em;
+	}
+	.titleWrapper h1 {
+		font-size: 2em
+	}
+	.titleWrapper p {
+		font-size: 1.3em;
+	}
+	.titleWrapper button {
+		margin: 2em 0 0 6.4em;
+		width: 30%;
+	}
+	/* Resizing the opening section */ 
+	.introWrapper {
+		width: 80%;
+		padding: 2em 0 ;
+		 margin: auto;
+		display: grid;
+		grid-gap: 15px;
+		grid-template-columns: 1fr 1fr; 
+		grid-template-rows:;
+		grid-template-areas: 
+			"one two"
+			"four two"
+			"four three"
+			;
+	}
+	.introWrapperText h2 {
+		font-size: 1.9em;
+	}
+	.introOne{
+		grid-area: one; 
+	}
+	.introTwo img{
+		grid-area: two;
+		height: 330px;
+
+	}
+	.introThree{
+		grid-area: three;
+
+
+	}
+	.introFour{
+		grid-area: four;
+
+
+	}
+	.introFour img {
+		height: 330px;
+	}
+	/* Resizing the chef section */ 
+	.chefWrapperBackground {
+		background-attachment: fixed;
+	}
+	.chefWrapper {
+		width:60%;
+		text-align: left;
+	}
+	.chefWrapper h3 {
+		text-align: center;
+		font-size: 1.7em;
+		
+	}
+	.chefWrapper hr {
+		margin: 2em 0
+	}
+	.chefWrapper p {
+		font-size: 1em;
+	}
+	/* Resizing the chef cards */ 
+	.chefCard {
+		display: inline-block;
+		width: 47%;
+		text-align: center
+	}
+	/* Resizing the menu */ 
+	.menuWrapper p {
+		margin-bottom: 2em;
+	}
+	/* Resizing the menu cards */ 
+	/* Pictures look too squished on tablet displays */
+	/* Restyling the testimonials */ 
+	.testimonialsTitle h4 {
+		font-size: 2.3em;
+	}
+	.testimonialsTitle p {
+		font-size: 1.2em;
+	}
+	.testimonialsOverlay {
+		background: #eee;
+		border-radius: 20px;
+		padding: 1em;
+	}
+	
+		
+	}
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
 
 	
 
