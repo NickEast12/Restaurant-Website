@@ -9,7 +9,7 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6, span {
 	font-family: 'Playfair Display', serif;
 }
 p {
@@ -216,11 +216,12 @@ p {
 		
 	}
 	.menuWrapper p {
-		padding-top: 1em;
+		padding: 2em 0;
 		width: 90%;
 		text-align: center;
 		margin: auto;
 		font-size: .9em;
+		
 	}
 	/* Styling the menu Cards*/
 	/* Styling the first menu card*/
@@ -272,6 +273,7 @@ p {
 	.IMGcard {
 		margin: 0;
 		padding: 0;
+		height: 100%; 
 		
 		
 	}
@@ -279,14 +281,82 @@ p {
 		width: 100%;
 		height: 100%;
 	}
-	
 	/* Formatting the cards into a grid layout*/
 	.MenuCards {
 		display: grid;
 		grid-template-columns: 1fr;
 	}
-
-
+	/* Styling the testimonials section*/
+	.testimonialsTitle {
+		width: 80%;
+		margin: auto;
+		text-align: center;
+		
+	}
+	.testimonialsTitle h4 {
+		font-size: 1.7em;
+		text-transform: capitalize;
+		padding-top: 1em;
+	}
+	.testimonialsTitle  hr {
+		width: 5em;
+		margin: .5em auto;
+		height: 2px;
+		color: #d6bd8f;
+		background: #d6bd8f;
+		border: none;
+		
+		
+		
+		
+	}
+	.testimonialsTitle p {
+		margin-top: 1em;
+		font-size: .9em;
+		color: #666
+	}
+	/* Styling the testimonials Overlay*/
+	.testimonialsIMGOverlayWrapper {
+		margin: 2em 0;
+		background: red;
+		text-align: center;
+	}
+	
+	/* Styling the overlay */ 
+	.testimonialsOverlay {
+		background: green;
+		width: 80%;
+		margin: auto;
+	}
+	.testimonialsOverlay  h6 {
+		font-size: .9em;
+		font-family: 'Montserrat', sans-serif;	
+		font-weight: 400;
+		font-style: italic;
+		padding-top: 1em;
+	}
+	.testimonialsOverlay span {
+		display: block;
+		margin: .5em 0; 
+		font-weight: 900;
+	}
+	.testimonialsOverlay p {
+		font-size: .8em;
+	}
+	/* Styling the overlay  IMG*/ 
+	.testimonialsIMG {
+		width: 85%;
+		height: 100%;
+		margin:  1em auto;
+		background: blue
+		
+	}
+	.testimonialsIMG img {
+		width: 100%;
+		border-top-left-radius: 20px;
+		border-bottom-right-radius: 20px
+	}
+	
 
 	
 	
