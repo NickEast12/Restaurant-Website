@@ -318,13 +318,11 @@ p {
 	/* Styling the testimonials Overlay*/
 	.testimonialsIMGOverlayWrapper {
 		margin: 2em 0;
-		background: red;
 		text-align: center;
+		margin-bottom: 8em;
 	}
-	
 	/* Styling the overlay */ 
 	.testimonialsOverlay {
-		background: green;
 		width: 80%;
 		margin: auto;
 	}
@@ -348,7 +346,6 @@ p {
 		width: 85%;
 		height: 100%;
 		margin:  1em auto;
-		background: blue
 		
 	}
 	.testimonialsIMG img {
@@ -356,6 +353,59 @@ p {
 		border-top-left-radius: 20px;
 		border-bottom-right-radius: 20px
 	}
+	/* Styling Contact Form*/ 
+	fieldset {
+		border: none;
+		width: 90%; 
+		margin: auto;
+		margin-bottom: 2em;
+		
+	}
+	fieldset h4 {
+		text-align: center;
+		font-size: 1.4em;
+	}
+	form input {
+		width: 90%;
+		font-size: 1.2em;
+		padding:  .5em;
+		margin: 1em auto ;
+		display: block;
+		border: #d6bd8f solid 1px; ;
+		font-family: 'Playfair Display', serif;
+		
+		
+	}
+	form button {
+		width: 90%;
+		margin:  0 5%;
+		padding:  1.5em;
+		margin-bottom: 2em;
+		font-size: .8em;
+		color: white;
+		font-weight: 600;
+		border-radius: 10px;
+		border: solid 1px #d6bd8f;
+		background: #d6bd8f;
+		transition-property: background, color, transform, box-shadow ;
+		transition-duration: .5s;
+		transition-timing-function: ease; 
+		
+		
+			
+	}
+	form button:hover {
+		transform: translateY(-4px);
+		background:  white;
+		color: #d6bd8f;
+		box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+
+		
+		
+	}
+	
+	}
+
 	
 
 	
