@@ -15,7 +15,6 @@ h1,h2,h3,h4,h5,h6, span {
 p {
 	font-family: 'Montserrat', sans-serif;	
 }
-
 @media (min-width:320px) {
 	/* Styling the page for mobile phones from 320px and larger */
 	/* Styling the header */
@@ -368,6 +367,12 @@ p {
 	fieldset h4 {
 		text-align: center;
 		font-size: 1.4em;
+	}
+	fieldset p {
+		width: 50%;
+		margin: auto;
+		text-align: center;
+		margin-top: 2em;
 	}
 	form input {
 		width: 90%;
@@ -757,7 +762,8 @@ box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.75);
 	/* Ajusting the contact form*/ 
 	form {
 		display: grid; 
-		grid-template-columns: 1fr 1fr 1fr 1fr 
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		margin: 3em 0;
 	}
 	form button {
 		margin: 0;
@@ -797,6 +803,54 @@ box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.75);
 
 
 
+}
+@media (min-width:1300px) {
+	/* Bug fixing and resizing elements that appear small on larger screens */
+	.chefWrapper {
+		margin: 0; 
+		margin-left: 50%;
+		font-size: 1.3em;
+		text-align: left;
+		width: 45%;
+	}
+	.chefWrapper h3 {
+		font-size: 1.8em;
+		
+	}
+	.chefWrapper p {
+		font-size: 1.22em;
+	}
+	.chefWrapper hr {
+		margin: 1em 42%;
+	}
+	.chefCard p {
+		font-size: 1em;
+	}
+	.menuWrapper h4 {
+		font-size: 2.5em; 
+		
+	}
+	.menuWrapper p {
+		width: 60%;
+		line-height: 30px;
+	}
+	.IMGcard {
+		padding: 0;
+		margin-top: 0;
+		
+	}
+	.IMGcard img {
+		width: 100%;
+		height: 80%;
+		margin: 10% 0; 
+		padding: 0;
+	}
+	fieldset h4 {
+		font-size: 2.2em;
+	}
+	.MenuItem p {
+		width: 100%;
+	}
 }
 
 
