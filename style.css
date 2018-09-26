@@ -545,10 +545,10 @@ box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.75);
 		display: grid;
 		grid-gap: 15px;
 		grid-template-columns: 1fr 1fr; 
-		grid-template-rows:;
+		
 		grid-template-areas: 
 			"one two"
-			"four two"
+			"four three"
 			"four three"
 			;
 	}
@@ -622,26 +622,199 @@ box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.75);
 	
 		
 	}
-
-
-
-
+@media (min-width:800px) {
+	/* resizing the into section as it looks off at this break point */
+	.introWrapperIMG img {
+		height: 380px
+	}
+	.introWrapperText h2 {
+		margin-top: 2em;
+	}
+	.introThree h2 {
+		margin-top: 0px;
+	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	/* Styling the menu wrapper */
+	.menuWrapper h4 {
+		font-size: 2.5em;
+	}
+	.menuWrapper p {
+		font-size: 1.2em;
+		width: 70%;
+		
+	}
+	/* Styling the menu items */
+	.itemPrice h5,  .itemPrice h6 {
+		font-size: 1.5em;
+	}
 	
 	
 }
+@media (min-width:1024px) {
+	/* Styling the page for small laptops from screen sizes 1024px and up */
+	/* Adjusting the title page */
+	.titleWrapper button {
+		margin: 0;
+		margin: 2em 10% 0 10%;
+		width: 20em;
+		font-size: .8em;
+	}
+	.introWrapperIMG img {
+		
+	}
+	.introWrapperText {
+		font-size: 1.2em;
+	}
+	.introFour img {
+		padding-bottom: 2em;
+		margin-top: -10em;
+		height: 500px;
+	}
+	.introTwo img {
+		height: 500px;
+		
+	}
+	.introOne {
+		margin-top: -2em;
+	}
+	/* Adjusting the chef setion */
+	.chefWrapper {
+		font-size: 1em;
+	}
+	.chefWrapper hr {
+		margin:  2em auto;
+	}
+	/* Adjusting the menu*/
+	.MenuCards {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr; 
+		grid-template-areas: 
+			"topright topleft"
+			"middleleft middleright"
+			"bottomright bottomleft"
+	}
+	/* Creating the grid method */ 
+	.a {
+		grid-area: topleft;
+	}
+	.b{
+		grid-area: topright;
+	}
+	.c {
+		grid-area: middleleft;
+	}
+	.d {
+		grid-area: middleright;
+	}
+	.e {
+		grid-area: bottomleft;
+	}
+	.f {
+		grid-area: bottomright;
+	}
+	.IMGcard {
+		background: #eee;
+		padding: 15%;
+	}
+	.IMGcard img {
+		height: 70%;
+		margin-top: 30%;
+		
+	}
+	.menuWrapper h4 {
+		font-size: 2em;
+	}
+	.itemPrice h5, .itemPrice h6 {
+		font-size: 1.4em;
+	}
+	.menuWrapper p {
+		width: 100%;
+		font-size: 1.1em;
+		
+	}
+	/* Ajusting the testimonials */ 
+	.testimonialsIMGOverlayWrapper {
+		position: relative;
+	}
+	.testimonialsOverlay {
+		position: absolute;
+		width: 40%;
+		top: 25%;
+		left: 5%;
+		background: white;
+		
+		
+	}
+	.testimonialsIMG {
+		width: 70%;
+	}
+	/* Ajusting the contact form*/ 
+	form {
+		display: grid; 
+		grid-template-columns: 1fr 1fr 1fr 1fr 
+	}
+	form button {
+		margin: 0;
+		padding: 0;
+		height: 4em;
+		margin-top: 1.4em; 
+	}
+	/* Ajusting the footer*/ 
+	.footer {
+		position: relative;
+	}
+	.contactDetails {
+		position: absolute;
+		z-index: 100; 
+		background: white;
+		width: 40%;
+		top: 20%;
+		left: 5%;
+	}
+	.mapWrapper {
+		z-index: 1;
+		
+	}
+	.mapWrapper img {
+		height: 600px;
+		background-attachment: scroll;
+	}
+	.termsConditionsWrapper{
+		display: grid; 
+		grid-template-columns: 1fr 1fr 1fr;
+		padding: .6em;
+	}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
 
 	
 
