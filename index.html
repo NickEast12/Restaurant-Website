@@ -272,8 +272,10 @@
 					</div>
 				</div>
 				<div class="mapWrapper">
-					<img src="Pictures/Screen%20Shot%202018-09-25%20at%2015.43.33.png">
+					<div id="map" style="position: static;">
+					
 				
+				</div>
 				</div>
 				<div class="termsConditionsWrapper">
 					<p>NickEast 2018 &copy;2018, All rights reserved</p>
@@ -282,7 +284,24 @@
 				</div>
 			</div>
 	
+		<script>
+		function initMap()	{
+				var  location = {lat: 51.2373, lng: -0.2059};
+				var map = new google.maps.Map(document.getElementById("map"), {
+					zoom: 15, 
+					center: location
+				});
+			var marker = new google.maps.Marker({
+				position: location,
+				map: map
+			});
+		}
 	
+	</script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=	AIzaSyAZv1fnBqcp2DgeJcO-kXK4MeMyuXzBiqk&callback=initMap
+"> </script>
 		</footer>
 </html>
 
+<!--	AIzaSyAZv1fnBqcp2DgeJcO-kXK4MeMyuXzBiqk
+			AIzaSyDsUuxFWhtdQv0QU1yhydJTI-XvWk_t2Yk -->
